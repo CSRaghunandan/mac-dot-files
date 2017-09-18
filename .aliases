@@ -1,1 +1,21 @@
-../.aliases
+
+# alias for ls
+alias ls='ls --color=auto -F'
+alias ll='ls -lhF'
+
+
+alias chromed="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222"
+
+alias ec='emacsclient --alternate-editor="" -c "$@"'
+
+alias firefox="/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox"
+
+alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
+
+
+# opens current directory in MacOS Finder
+alias f='open -a Finder ./'
+
+alias c=clear
+alias u=cd ~/
+alias o=pwd

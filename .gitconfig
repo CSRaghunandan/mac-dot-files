@@ -1,1 +1,7 @@
-../.gitconfig
+[user]
+	name = CSRaghunandan
+	email = rnraghunandan@gmail.com
+[core]
+	excludesfile = /Users/csraghunandan/.gitignore_global
+[magit]
+	hideCampaign = true
