@@ -3,5 +3,6 @@
 	email = rnraghunandan@gmail.com
 [core]
 	excludesfile = /Users/csraghunandan/.gitignore_global
+	editor = emacs
 [magit]
 	hideCampaign = true
