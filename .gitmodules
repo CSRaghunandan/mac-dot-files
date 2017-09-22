@@ -1,3 +1,0 @@
-[submodule "emacs/dot-emacs"]
-	path = emacs/dot-emacs.d
-	url = https://github.com/CSRaghunandan/.emacs.d
