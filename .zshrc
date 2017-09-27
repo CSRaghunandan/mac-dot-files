@@ -129,4 +129,8 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH-/usr/share/man
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/Cellar/llvm/5.0.0/share/clang:$PATH"
 
+# use the latest version of openssl provided by homebrew
 export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# needed for sdl2
+export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
