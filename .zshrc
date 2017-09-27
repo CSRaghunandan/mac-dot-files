@@ -128,3 +128,5 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH-/usr/share/man
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/Cellar/llvm/5.0.0/share/clang:$PATH"
+
+export PATH="/usr/local/opt/openssl/bin:$PATH"
