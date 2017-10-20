@@ -134,3 +134,4 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # needed for sdl2
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
