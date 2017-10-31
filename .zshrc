@@ -128,6 +128,8 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH-/usr/share/man
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="/usr/local/Cellar/llvm/5.0.0/share/clang:$PATH"
+LIBCLANG_LIBRARY=`llvm-config --libdir`/libclang.dylib
+LIBCLANG_INCLUDE=`llvm-config --includedir`
 
 # use the latest version of openssl provided by homebrew
 export PATH="/usr/local/opt/openssl/bin:$PATH"

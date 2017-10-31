@@ -16,4 +16,3 @@ export PATH=$PATH://Applications/Racket\ v6.10/bin
 
 # export Golang bin path
 export PATH=$PATH:~/go/bin
-
