@@ -12,7 +12,7 @@ export RUST_SRC_PATH=~/.multirust/toolchains/nightly-x86_64-apple-darwin/lib/rus
 export PATH=$PATH://usr/local/texlive/2016/bin/x86_64-darwin
 
 # export racket path
-export PATH=$PATH://Applications/Racket\ v6.10/bin
+export PATH=$PATH://Applications/Racket\ v6.11/bin
 
 # export Golang bin path
 export PATH=$PATH:~/go/bin
