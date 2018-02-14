@@ -1,3 +1,15 @@
+#
+# Defines environment variables.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Ensure that a non-login, non-interactive shell has a defined environment.
+if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprofile"
+fi
+
 # add path to where rust cargo crates are installed
 export PATH=$PATH://Users/csraghunandan/.cargo/bin
 
@@ -40,3 +52,4 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 # needed for sdl2
 export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
 export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+
