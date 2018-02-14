@@ -16,3 +16,27 @@ export PATH=$PATH://Applications/Racket\ v6.11/bin
 
 # export Golang bin path
 export PATH=$PATH:~/go/bin
+
+
+
+LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+export  LDFLAGS
+
+CPPFLAGS="-I/usr/local/opt/llvm/include"
+export CPPFLAGS
+
+
+# OPAM configuration
+. /Users/csraghunandan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/usr/local/Cellar/llvm/5.0.0/share/clang:$PATH"
+LIBCLANG_LIBRARY=`llvm-config --libdir`/libclang.dylib
+LIBCLANG_INCLUDE=`llvm-config --includedir`
+
+# use the latest version of openssl provided by homebrew
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+# needed for sdl2
+export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"

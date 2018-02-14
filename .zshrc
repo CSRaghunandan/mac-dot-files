@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx history common-aliases tmux)
+plugins=(osx git common-aliases tmux brew docker zsh-syntax-highlighting sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -61,6 +61,8 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+export TERM=xterm-256color
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -97,7 +99,7 @@ trash () { command mv "$@" ~/.Trash ; }
 ql () { qlmanage -p "$*" >& /dev/null; }
 
 # integrate iterm2 with shell
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+# test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 # run virtualenvwrapper.sh
 # source /usr/local/bin/virtualenvwrapper.sh
@@ -107,15 +109,10 @@ export HISTCONTROL=ignoredups
 
 # increase history size to 1000; default is 500
 export HISTSIZE=1000
+export SAVEHIST=1000
 
 # Change umask to make directory sharing easier
 umask 0002
-
-LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
-export  LDFLAGS
-
-CPPFLAGS="-I/usr/local/opt/llvm/include"
-export CPPFLAGS
 
 # integrate GNU to command line instead of tools provided by apple
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
@@ -123,17 +120,3 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 # use GNU man pages instead of BSD ones
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH-/usr/share/man}"
 
-# OPAM configuration
-. /Users/csraghunandan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export PATH="/usr/local/Cellar/llvm/5.0.0/share/clang:$PATH"
-LIBCLANG_LIBRARY=`llvm-config --libdir`/libclang.dylib
-LIBCLANG_INCLUDE=`llvm-config --includedir`
-
-# use the latest version of openssl provided by homebrew
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-
-# needed for sdl2
-export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/lib"
-export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
