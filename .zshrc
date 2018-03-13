@@ -42,6 +42,8 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 # use GNU man pages instead of BSD ones
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH-/usr/share/man}"
 
+PATH="/usr/local/opt/gnu-tar/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/gnu-tar/libexec/gnuman:$MANPATH"
 
 if [ -n "$INSIDE_EMACS" ]; then
     chpwd() { print -P "\033AnSiTc %d" }
