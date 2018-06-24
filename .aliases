@@ -8,7 +8,7 @@ alias chromed="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --
 
 alias ec='emacsclient --alternate-editor="" -c "$@"'
 
-alias firefox="/Applications/FirefoxDeveloperEdition.app/Contents/MacOS/firefox"
+alias firefox="/Applications/FirefoxNightly.app/Contents/MacOS/firefox"
 
 alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
 
