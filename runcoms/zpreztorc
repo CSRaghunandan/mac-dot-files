@@ -38,6 +38,7 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'docker' \
   'history' \
+  'utility' \
   'directory' \
   'spectrum' \
   'utility' \
