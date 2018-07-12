@@ -31,7 +31,7 @@ export PATH=$PATH:~/go/bin
 
 
 
-LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+LDFLAGS="-L/usr/local/opt/llvm/lib"
 export  LDFLAGS
 
 CPPFLAGS="-I/usr/local/opt/llvm/include"
@@ -41,10 +41,7 @@ export CPPFLAGS
 # OPAM configuration
 . /Users/csraghunandan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
-export PATH="/usr/local/opt/llvm/bin:$PATH"
-export PATH="/usr/local/Cellar/llvm/5.0.0/share/clang:$PATH"
-LIBCLANG_LIBRARY=`llvm-config --libdir`/libclang.dylib
-LIBCLANG_INCLUDE=`llvm-config --includedir`
+export PATH="/usr/local/Cellar/llvm/6.0.1/share/clang:$PATH"
 
 # use the latest version of openssl provided by homebrew
 export PATH="/usr/local/opt/openssl/bin:$PATH"
