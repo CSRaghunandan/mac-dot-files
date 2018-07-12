@@ -164,6 +164,5 @@ fi
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 
+echo
 fortune
-echo ""
-chuck
