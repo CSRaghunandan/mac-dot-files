@@ -30,6 +30,13 @@ zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
   'editor' \
+  'syntax-highlighting' \
+  'autosuggestions' \
+  'git' \
+  'tmux' \
+  'fasd' \
+  'osx' \
+  'docker' \
   'history' \
   'directory' \
   'spectrum' \
@@ -70,7 +77,7 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 #
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
-# zstyle ':prezto:module:git:status:ignore' submodules 'all'
+zstyle ':prezto:module:git:status:ignore' submodules 'all'
 
 #
 # GNU Utility
