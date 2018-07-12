@@ -32,7 +32,6 @@ zstyle ':prezto:load' pmodule \
   'editor' \
   'syntax-highlighting' \
   'autosuggestions' \
-  'git' \
   'tmux' \
   'fasd' \
   'osx' \
