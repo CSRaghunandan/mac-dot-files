@@ -163,6 +163,7 @@ if [ -n "$INSIDE_EMACS" ]; then
 fi
 
 export PATH="/usr/local/opt/llvm/bin:$PATH"
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
 echo
 fortune
