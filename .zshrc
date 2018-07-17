@@ -76,7 +76,8 @@ plugins=(
     common-aliases
     emacs
     yarn
-    virtualenvwrapper
+    python
+    pyenv
     wd
     chucknorris
 )
@@ -167,3 +168,5 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
 echo
 fortune
+
+eval $(thefuck --alias)
