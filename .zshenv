@@ -24,19 +24,16 @@ export RUST_SRC_PATH=~/.multirust/toolchains/nightly-x86_64-apple-darwin/lib/rus
 export PATH=$PATH://usr/local/texlive/2016/bin/x86_64-darwin
 
 # export racket path
-export PATH=$PATH://Applications/Racket\ v6.11/bin
+export PATH=$PATH://Applications/Racket\ v7.0/bin
 
 # export Golang bin path
 export PATH=$PATH:~/go/bin
-
-
 
 LDFLAGS="-L/usr/local/opt/llvm/lib"
 export  LDFLAGS
 
 CPPFLAGS="-I/usr/local/opt/llvm/include"
 export CPPFLAGS
-
 
 # OPAM configuration
 . /Users/csraghunandan/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

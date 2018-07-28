@@ -76,8 +76,6 @@ plugins=(
     common-aliases
     emacs
     yarn
-    python
-    pyenv
     wd
     chucknorris
 )
